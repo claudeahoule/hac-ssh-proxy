@@ -26,7 +26,7 @@ if LOG_CONF.is_file():
 else:
     logging.basicConfig(level=logging.INFO)
 
-log = logging.getLogger("hac-ssh-proxy")
+log = logging.getLogger("hacsshproxy")
 
 # --------------------------------------------------------------
 # Load & validate the JSON config (mounted at /config/config.json)
