@@ -1,0 +1,22 @@
+{
+  "hosts": [
+    {
+      "hostname": "router01",
+      "ip": "192.168.1.10",
+      "userid": "admin",
+      "ssh_key": "/config/keys/router01.pem",
+      "allowed_commands": [
+        "show version",
+        "show interfaces",
+        "reboot"
+      ]
+    },
+    {
+      "hostname": "web01",
+      "ip": "10.0.0.5",
+      "userid": "deploy",
+      "ssh_key": "/config/keys/web01.pem",
+      "allowed_commands": "*"
+    }
+  ]
+}
